@@ -1,0 +1,18 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Permitir acceso a la carpeta 'photos' solo al propietario del archivo
+    match /photos/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Permitir acceso a la carpeta 'researchWorks' solo a usuarios autenticados
+    match /researchWorks/{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+
+    match /users/{userId}/profile.jpg {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}

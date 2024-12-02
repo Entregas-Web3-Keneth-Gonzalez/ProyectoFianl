@@ -1,0 +1,12 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "researchWorks",
+      "fields": [
+        { "fieldPath": "academicDegree", "order": "ASCENDING" },
+        { "fieldPath": "Proyecto", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

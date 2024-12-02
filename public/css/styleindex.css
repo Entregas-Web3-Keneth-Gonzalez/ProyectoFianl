@@ -1,0 +1,141 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #004085;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-item {
+    list-style: none;
+}
+
+.navbar .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar .nav-link:hover {
+    background-color: #0056b3;
+}
+
+.user-photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Main container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-button, .reset-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-button {
+    background-color: #004085;
+    color: white;
+}
+
+.filter-button:hover {
+    background-color: #0056b3;
+}
+
+.reset-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+.reset-button:hover {
+    background-color: #5a6268;
+}
+
+/* Research List */
+.research-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.research-item {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.research-item h3 {
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+}
+
+.research-item p {
+    margin: 0 0 5px 0;
+    font-size: 0.9em;
+    color: #666;
+}

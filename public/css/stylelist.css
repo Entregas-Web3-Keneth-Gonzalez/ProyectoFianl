@@ -1,0 +1,143 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+p {
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #004085;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu ul li {
+    margin: 0 10px;
+}
+
+.navbar-menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar-menu ul li a:hover,
+.navbar-menu ul li a.active {
+    background-color: #0056b3;
+}
+
+/* Toggle button (mobile) */
+.navbar-toggle {
+    display: none;
+    background: transparent;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+}
+
+/* Filters */
+.filters {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.filter-input {
+    padding: 10px;
+    margin: 10px;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-button {
+    background-color: #004085;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #0056b3;
+}
+
+/* Research List */
+.research-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.research-list .research-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar-menu ul {
+        flex-direction: column;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+}
